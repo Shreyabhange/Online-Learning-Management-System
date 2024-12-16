@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learn Sign Up Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f8fa;
+      }
+
+      .container {
+        display: flex;
+        width: 95vw;
+        height: 95vh;
+        max-width: 1200px;
+        max-height: 800px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .video-section {
+        flex: 1;
+        background-color: #4b6cb7;
+        position: relative;
+        clip-path: circle(85% at 0% 50%);
+      }
+
+      .video-section video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .form-section {
+        flex: 1;
+        padding: 40px 20px; /* Increased padding for breathing room */
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: auto; /* Enables scrolling if content overflows */
+      }
+
+      .form-section1 {
+        max-height: 90%; /* Restricts the height of form content */
+        padding: 10px;
+      }
+
+      .form-section h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center; /* Centers the heading for a balanced look */
+      }
+
+      .form-section form input,
+      .form-section form select {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        background-color: #adadad;
+      }
+
+      .form-section form input[type="submit"] {
+        background-color: #0073e6;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+      }
+
+      .form-section form input,
+      .form-section form select {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-section">
+        <video autoplay muted loop>
+          <source src="hehehe.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section1">
+          <h1>Create your own Account</h1>
+
+          <form action="#">
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Email" />
+            <p>First Name</p>
+            <input type="text" name="firstname" placeholder="First name" />
+            <p>Last Name</p>
+            <input type="text" name="lastname" placeholder="Last name" />
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Password" />
+            <p>Company Size</p>
+            <select name="companysize">
+              <option value="" disabled selected>Company size</option>
+              <option value="1-10">1-10</option>
+              <option value="11-50">11-50</option>
+              <option value="51-200">51-200</option>
+            </select>
+            <input type="submit" value="Create your account" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
